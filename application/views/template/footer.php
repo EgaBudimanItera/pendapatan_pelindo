@@ -48,7 +48,7 @@
 <script src="<?=base_url()?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="<?=base_url()?>assets/bower_components/raphael/raphael.min.js"></script>
-<script src="<?=base_url()?>assets/bower_components/morris.js/morris.min.js"></script>
+<script src="<?=base_url()?>assets/bower_components/morris.js/morris.js"></script>
 <!-- Sparkline -->
 <script src="<?=base_url()?>assets/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
@@ -93,12 +93,10 @@
       'info'        : true,
       'autoWidth'   : true
     })
-    $('#tglmulai').datepicker({
+    $('#tglpranota').datepicker({
       autoclose: true
     })
-    $('#tmt').datepicker({
-      autoclose: true
-    })
+    
   })
 
   $(document).ready(function(){
@@ -106,13 +104,10 @@
           $("#info-alert").slideUp(50);
       });
      //select 2 untuk combox produk
-    $("#idproduk").select2();
-    $("#idbb").select2();
-    $("#idbb2").select2();
-    $("#idtkl").select2();
-    $("#idtkl2").select2();
-    $("#idop").select2();
-    $("#idop2").select2();
+    $("#kodekapal").select2();
+    $("#kodecustomer").select2();
+    $("#kodekomoditi").select2();
+    $("#kodetarif").select2();
     
   });
 </script>

@@ -25,7 +25,7 @@
           </a>
         </li>
        
-        <li class="<?php if($link=='kapal' ||$link=="customer"||$link=="tarif"||$link=="pengguna"){echo'active';}?> treeview">
+        <li class="<?php if($link=='kapal' ||$link=="customer"||$link=="tarif"||$link=="pengguna"||$link=="komoditi"){echo'active';}?> treeview">
           <a href="#">
             <i class="fa fa-industry"></i>
             <span>Data Master</span>
@@ -36,6 +36,7 @@
           <ul class="treeview-menu">
             <li class="<?php if($link=='kapal'){echo'active';}?>"><a href="<?=base_url()?>kapal"><i class="fa fa-cubes"></i> Kapal</a></li>
             <li class="<?php if($link=='customer'){echo'active';}?>"><a href="<?=base_url()?>customer"><i class="fa fa-server"></i> Customer</a></li>
+            <li class="<?php if($link=='komoditi'){echo'active';}?>"><a href="<?=base_url()?>komoditi"><i class="fa fa-server"></i> Komoditi</a></li>
             <li class="<?php if($link=='tarif'){echo'active';}?>"><a href="<?=base_url()?>tarif"><i class="fa fa-bank"></i> Tarif</a></li>
             <li class="<?php if($link=='pengguna'){echo'active';}?>"><a href="<?=base_url()?>pengguna"><i class="fa fa-users"></i> Pengguna</a></li>
           </ul>
